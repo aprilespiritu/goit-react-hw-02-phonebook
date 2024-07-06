@@ -53,7 +53,7 @@ export class ContactForm extends Component {
             Notify.failure(`${name} is already in your contacts!`, { position: 'center-top' });
             return;
         } else {
-            Notify.success(`${name} has been sucessfully added to your contacts!`), { position: 'center-top' };
+            Notify.success(`${name} has been sucessfully added to your contacts!`, { position: 'center-top' });
         }
 
         //Add Contact
