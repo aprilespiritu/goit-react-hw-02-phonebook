@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const Filter = ({ filter, setFilter }) => {
     //filter by name on Search
     const handleFilterChange = e => {
-        this.props.setFilter(e.target.value);
+        setFilter(e.target.value);
     };
 
     return (
