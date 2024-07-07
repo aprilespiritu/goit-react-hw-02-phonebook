@@ -2,4 +2,33 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+.formField {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.formLabel {
+    font-weight: bold;
+}
+
+.btnSubmit {
+    padding: 10px 20px;
+    background-color: #0e7bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnSubmit:hover {
+    background-color: #0056b3;
 }
