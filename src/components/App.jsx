@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { ContactForm } from "./ContactForm/ContactForm";
-import { ContactList } from "./ContactList/ContactList";
 import { Filter } from "./Filter/Filter";
+import { ContactList } from "./ContactList/ContactList";
 
 export class App extends Component {
   state = {
@@ -34,11 +34,9 @@ export class App extends Component {
 
   filterContact = () => {
     const { contacts, filter } = this.state;
-    return (
-      <div>
-        <h1>Phonebook</h1>
-      
-      </div>
+    const filterLowerCase = filter.toLowerCase();
+    return contacts.filter(contact =>
+      contact.name.toLowerCase().includes(filterLowerCase)
     );
   };
 
